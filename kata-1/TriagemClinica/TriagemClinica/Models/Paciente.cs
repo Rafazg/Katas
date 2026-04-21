@@ -2,10 +2,10 @@
 
 public enum NivelUrgencia
 {
-    Baixa,
-    Media,
-    Alta,
-    Critica
+    Baixa = 3,
+    Media = 2,
+    Alta = 1,
+    Critica = 0
 }
 
 public class Paciente
@@ -15,35 +15,21 @@ public class Paciente
     public NivelUrgencia Urgencia { get; set; }
     public TimeSpan HorarioChegada { get; set; }
 
-    
+    // Urgência efetiva após aplicar as regras de promoção
     public NivelUrgencia UrgenciaEfetiva => AplicarRegrasDePromocao();
 
     private NivelUrgencia AplicarRegrasDePromocao()
     {
         var urgencia = Urgencia;
 
-        // Regra 1
+        // Regra 4: idosos (60+) com MÉDIA sobem para ALTA
         if (Idade >= 60 && urgencia == NivelUrgencia.Media)
             urgencia = NivelUrgencia.Alta;
 
-        // Regra 2
-        if (Idade < 18)
-            urgencia = PromoverUrgencia(urgencia);
+        // Regra 5: menores de 18 ganham +1 nível (valor menor = mais prioritário)
+        if (Idade < 18 && urgencia != NivelUrgencia.Critica)
+            urgencia = (NivelUrgencia)((int)urgencia - 1);
 
         return urgencia;
-    }
-
-    private NivelUrgencia PromoverUrgencia(NivelUrgencia nivel)
-    {
-        if (nivel == NivelUrgencia.Baixa)
-            return NivelUrgencia.Media;
-
-        if (nivel == NivelUrgencia.Media)
-            return NivelUrgencia.Alta;
-
-        if (nivel == NivelUrgencia.Alta)
-            return NivelUrgencia.Critica;
-
-        return nivel;
     }
 }
