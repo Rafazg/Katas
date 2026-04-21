@@ -12,4 +12,4 @@
 - **Linguagem:** C#  
 - **Framework:** .NET  
 - **Arquitetura:** Clean Architecture  
-- **Testes:** xUnit (ou NUnit, se for o seu caso)
+- **Testes:** xUnit
