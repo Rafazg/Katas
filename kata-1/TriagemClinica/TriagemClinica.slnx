@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TriagemClinica.Tests/TriagemClinica.Tests.csproj" Id="99e92e38-f07f-4c8f-8635-3c67ad48f13b" />
+  <Project Path="TriagemClinica/TriagemClinica.csproj" Id="a1e0d841-1a82-4372-8e38-d07bbcfac492" />
+</Solution>
