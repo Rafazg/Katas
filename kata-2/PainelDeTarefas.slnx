@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PainelDeTarefas.Api/PainelDeTarefas.Api.csproj" />
+    <Project Path="src/PainelDeTarefas.Application/PainelDeTarefas.Application.csproj" />
+    <Project Path="src/PainelDeTarefas.Domain/PainelDeTarefas.Domain.csproj" />
+    <Project Path="src/PainelDeTarefas.Infrastructure/PainelDeTarefas.Infrastructure.csproj" />
+  </Folder>
+</Solution>
