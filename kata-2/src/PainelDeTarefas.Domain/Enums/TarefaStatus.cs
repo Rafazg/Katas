@@ -4,7 +4,9 @@ using System.Text;
 
 namespace PainelDeTarefas.Domain.Enums
 {
-    internal class TarefaStatus
+    public enum TarefaStatus
     {
+        Pendente,
+        Concluida
     }
 }

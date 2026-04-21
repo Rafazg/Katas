@@ -4,7 +4,10 @@ using System.Text;
 
 namespace PainelDeTarefas.Domain.Enums
 {
-    internal class Prioridade
+    public enum Prioridade
     {
+        Baixa,
+        Media,
+        Alta
     }
 }
