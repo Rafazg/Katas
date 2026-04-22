@@ -155,6 +155,52 @@ http://localhost:5173
 </details>
 
 
+---
+<details>
+<summary>KATA 3</summary>
+
+# Kata 3 — Análise de Engenharia de Software
+## Analise e decisões estão presentes no arquivo PLANO.md
+
+</details>
+
+---
+
+<details>
+<summary>KATA 4</summary>
+
+# Kata 4 — Pipeline de Relatório
+
+## Pré-requisitos
+- [Python 3.8+](https://www.python.org/downloads/)
+
+- Verifique a instalação:
+ 
+```bash
+python --version
+```
+> Nenhuma instalação de pacotes externos é necessária. O projeto utiliza apenas bibliotecas da biblioteca padrão do Python.
+
+### Passo 1 — Rodar o pipeline
+ 
+```bash
+cd kata-3
+python pipeline.py
+```
+O pipeline irá:
+- Ler os três arquivos CSV da pasta `data/`
+- Aplicar as limpezas e normalizações nos dados
+- Gerar os arquivos consolidados na pasta `output/`
+
+### Passo 2 — Exibir os indicadores
+ 
+```bash
+python indicadores.py
+```
+> O `pipeline.py` precisa ser executado antes do `indicadores.py`, pois os indicadores leem o arquivo `output/consolidado.json` gerado pelo pipeline.
+</details>
+
+
 
 ## Comentários livres: o que eu faria diferente com mais tempo
 
