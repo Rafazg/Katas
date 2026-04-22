@@ -2,15 +2,7 @@
 
 ## 1. Como organizei o backend
 
-A ideia foi manter tudo bem separado, mas sem complicar demais. O backend ficou dividido em quatro partes:
-
-* **Entities:** representam os dados do sistema (ex: `TarefaItem`)
-* **DTOs:** definem o que entra na API (evita expor diretamente o modelo interno)
-* **Repository:** camada que cuida da persistência (`ITarefaRepository`)
-* **Controller:** recebe as requisições, chama o repositório e devolve a resposta HTTP
-
-Essa separação ajuda muito em futuras evoluções do projeto.
-Por exemplo: hoje estou usando SQLite, mas se eu quiser usar outro banco de dados, não preciso mexer no controller nem no model, só crio outra implementação do repositório.
+Utilizei ASP.NET Core com Clean Architecture, buscando separar bem as responsabilidades entre as camadas e facilitar futuras mudanças. Essa abordagem permite trocar a forma de persistência sem impactar as regras de negócio.
 
 ### Por que usei persistência SQLite?
 
