@@ -4,7 +4,9 @@ using System.Text;
 
 namespace PainelDeTarefas.Application.DTOs
 {
-    internal class AtualizarTarefaDto
-    {
-    }
+    public record AtualizarTarefaDto(
+        string? Titulo,
+        string? Prioridade,
+        string? Status
+        );
 }
