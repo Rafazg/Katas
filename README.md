@@ -138,7 +138,7 @@ npm install
  Vá até o caminho `kata-2/frontend` e execute:
 
 ```bash
-npm run dev
+npm start 
 ```
  
 O frontend ficará disponível em:
