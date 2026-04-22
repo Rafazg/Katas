@@ -1,0 +1,13 @@
+id_pedido,data_pedido,id_cliente,valor_total,status
+P001,2024-01-15,C001,1500.00,entregue
+P002,15/02/2024,C002,"2.300,50",entregue
+P003,2024-03-10T08:30:00,C003,980.00,cancelado
+P004,20/03/2024,C004,,pendente
+P005,2024-04-05,C001,3200.00,entregue
+P006,10/04/2024,C005,"1.750,00",pendente
+P007,2024-05-01,C002,420.50,entregue
+P008,2024-05-20,,650.00,entregue
+P009,25/05/2024,C003,2100.00,pendente
+P010,2024-06-01,C006,890.00,entregue
+P011,2024-06-15,C004,1340.00,entregue
+P012,30/06/2024,C005,"3.900,00",cancelado

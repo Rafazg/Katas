@@ -1,0 +1,7 @@
+id_cliente,nome,cidade,estado,data_cadastro
+C001,Ana Souza,São Paulo,SP,2023-01-10
+C002,Bruno Lima,sao paulo,SP,15/03/2023
+C003,Carla Mendes,SAO PAULO,SP,2023-06-01T00:00:00
+C004,Diego Alves,recife,PE,20/07/2023
+C005,Elena Costa,RECIFE,PE,2023-09-15
+C006,Felipe Rocha,Fortaleza,CE,10/11/2023

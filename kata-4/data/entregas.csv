@@ -1,0 +1,13 @@
+id_entrega,id_pedido,data_prevista,data_realizada,status_entrega
+E001,P001,2024-01-20,2024-01-19,entregue_no_prazo
+E002,P002,20/02/2024,25/02/2024,entregue_com_atraso
+E003,P003,15/03/2024,,cancelado
+E004,P005,10/04/2024,2024-04-10,entregue_no_prazo
+E005,P006,15/04/2024,,pendente
+E006,P007,05/05/2024,2024-05-08,entregue_com_atraso
+E007,P008,25/05/2024,2024-05-24,entregue_no_prazo
+E008,P010,06/06/2024,2024-06-04,entregue_no_prazo
+E009,P011,20/06/2024,2024-06-25,entregue_com_atraso
+E010,P012,05/07/2024,,cancelado
+E011,P999,10/06/2024,2024-06-12,entregue_no_prazo
+E012,P888,15/06/2024,,pendente
