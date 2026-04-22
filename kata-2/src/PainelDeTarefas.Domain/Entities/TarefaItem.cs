@@ -8,7 +8,7 @@ namespace PainelDeTarefas.Domain.Entities
 {
     public class TarefaItem
     {
-        public Guid Id { get; set; } = new Guid();
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string Titulo { get; private set; } = string.Empty;
         public TarefaStatus Status { get; private set; } = TarefaStatus.Pendente;
         public Prioridade Prioridade { get; private set; } = Prioridade.Baixa;
@@ -25,10 +25,10 @@ namespace PainelDeTarefas.Domain.Entities
             if (string.IsNullOrWhiteSpace(titulo))
             {
                 throw new ArgumentException("O título da tarefa não pode ser vazio.", nameof(titulo));
-
-                Titulo = titulo;
-                Prioridade = prioridade;
             }
+
+            Titulo = titulo;
+            Prioridade = prioridade;
         }
 
         public void AtualizarTitulo(string titulo)

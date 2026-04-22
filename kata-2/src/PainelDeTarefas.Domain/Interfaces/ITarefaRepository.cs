@@ -8,10 +8,10 @@ namespace PainelDeTarefas.Domain.Interfaces
 {
     public interface ITarefaRepository
     {
-        Task<IEnumerable<TarefaItem>> ListarAsync(TarefaItem? status);
+        Task<IEnumerable<TarefaItem>> ListarAsync(TarefaStatus? status);
         Task<TarefaItem?> BuscarPorIdAsync(Guid id);
-        Task<TarefaItem> AdicionarAsync(TarefaItem task);
-        Task<TarefaItem> AtualizarAsync(TarefaItem task);
+        Task<TarefaItem> AdicionarAsync(TarefaItem tarefa);
+        Task<TarefaItem> AtualizarAsync(TarefaItem tarefa);
         Task RemoverAsync(Guid id);
     }
 }
