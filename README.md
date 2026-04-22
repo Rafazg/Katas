@@ -14,7 +14,13 @@
 - **Arquitetura:** Clean Architecture  
 - **Testes:** xUnit
 ---
-
+## Justificativa da Escolha
+ * **C# / .NET:** por já ter utilizado o conjunto em outros projetos pessoais, ser uma tecnologia sólida, tendo uma boa base de documentações e alinhada com o contexto da empresa
+ * **React com TailwindCSS:** O React facilita a construção de interfaces reutilizáveis e organizadas, enquanto o Tailwind agiliza a estilização sem a necessidade de criar arquivos CSS separados.
+ * **Python:** Amplamente usada em análise e processamento de dados e utilizada na stack da empresa
+ * **SQLite com EF Core:** por ser uma solução leve e fácil de executar, sem necessidade de configuração adicional
+ * **xUnit:** Framework de testes padrão para aplicações em .NET
+ * **** 
 
 # Instruções para rodar localmente
 
@@ -150,4 +156,14 @@ http://localhost:5173
 
 
 
-# Comentários livres: o que você faria diferente com mais tempo?
+## Comentários livres: o que eu faria diferente com mais tempo
+
+Com mais tempo, eu focaria principalmente em melhorar a qualidade e a organização do projeto.
+
+Eu adicionaria mais testes automatizados, cobrindo melhor os cenários de borda e garantindo mais segurança para evoluir o código. Também refinaria alguns pontos da arquitetura, buscando deixar a separação de responsabilidades ainda mais clara.
+
+No frontend, melhoraria a experiência do usuário com feedbacks visuais, como estados de carregamento e mensagens mais claras.
+
+Em relação à persistência de dados, gostaria de evoluir a aplicação para utilizar Oracle, pois já tenho experiência prática com o ambiente e com PL/SQL no meu dia a dia como técnico de suporte. Isso permitiria trabalhar melhor com modelagem e consultas mais próximas de um cenário real da empresa.
+
+Por fim, também consideraria evoluções funcionais, como autenticação de usuários e melhorias no gerenciamento de tarefas, aproximando mais o sistema de um produto real.
