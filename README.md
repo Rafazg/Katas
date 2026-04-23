@@ -136,7 +136,7 @@ http://localhost:5058/swagger
 ### 1. Instalar dependências
  
 ```bash
-cd kata-2/frontend/painel-tarefas
+cd kata-2/frontend
 npm install
 ```
  
