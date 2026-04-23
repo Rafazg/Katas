@@ -184,7 +184,7 @@ python --version
 ### Passo 1 — Rodar o pipeline
  
 ```bash
-cd kata-3
+cd kata-4
 python pipeline.py
 ```
 O pipeline irá:
